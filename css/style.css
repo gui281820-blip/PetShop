@@ -1,0 +1,118 @@
+/* Estilização geral do sistema PetShop */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+header {
+    background-color: #2c7be5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #1f5fbf;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #2c7be5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.produto {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Estilização do carrossel da página inicial */
+#carouselPetShop {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.imagem-carrossel {
+    height: 280px;
+    object-fit: contain;
+    background-color: white;
+}
+
+/* Estilização dos cards de produtos */
+.produtos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.produto-card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.produto-card h3 {
+    margin-top: 15px;
+    color: #2c7be5;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}

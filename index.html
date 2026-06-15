@@ -3,43 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>PetShop</title>
 </head>
 <body>
 
+
+<!-- Cabeçalho -->
 <header>
         <h1>PetShop Zona Sul</h1>
     </header>
 
-    <hr>
+    
+<!-- Menu de navegação -->
+    <nav>
 
-    <a href="index.html">Início</a> |
-    <a href="produtos.html">Produtos</a> |
-    <a href="servicos.html">Serviços</a> |
+
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="agendamento.html">Agendamento</a>
     <a href="contato.html">Contato</a>
 
-    <hr>
 
+    </nav>
+
+    
+<!-- Conteúdo principal da página inicial -->
     <main>
+        
+    <!-- Carrossel de imagens utilizando Bootstrap -->
+        <section id="carouselPetShop" class="carousel slide mb-4" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="imagens/ração-cães.jpg" class="d-block w-100 imagem-carrossel" alt="Ração premium para cães">
+        </div>
+
+        <div class="carousel-item">
+            <img src="imagens/roupa-cachorro.jpg" class="d-block w-100 imagem-carrossel" alt="Roupa para cachorro">
+        </div>
+
+        <div class="carousel-item">
+            <img src="imagens/tapete-higienico.jpg" class="d-block w-100 imagem-carrossel" alt="Tapete higiênico para pets">
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPetShop" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselPetShop" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+        </section>
 
         <h2>Bem-vindo ao PetShop!</h2>
 
-        <p>
-            Trabalhamos com produtos e serviços para cães e gatos.
-        </p>
+    <p>
+        Trabalhamos com produtos e serviços para cães e gatos.
+    </p>
 
-        <p>
-            Oferecemos acessórios, rações, produtos de higiene e serviços de banho e tosa.
-        </p>
+    <p>
+        Oferecemos acessórios, rações, produtos de higiene e serviços de banho e tosa.
+    </p>
+
+      <a href="agendamento.html" class="btn btn-primary">
+             Agendar Atendimento
+       </a>
 
     </main>
 
-    <hr>
-
+    
+<!-- Rodapé do site -->
     <footer>
         <p>© 2026 PetShop Zona Sul - Projeto Acadêmico</p>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
